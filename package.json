@@ -5,8 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "node bin/server_side/start_web_server.js",
-		"build": "node bin/server_side/build.js",
-		"clean": "rm -r bin"
+		"build": "mkdir bin;npx tsc --outFile bin/server_side/build.js src/server_side/build.ts;node bin/server_side/build.js",
+		"clean": "rm -r bin;rm -r node_modules"
 	},
 	"repository": {
 		"type": "git",
@@ -17,5 +17,8 @@
 	"bugs": {
 		"url": "https://github.com/thatretrodev/thatretrodev-website-src/issues"
 	},
-	"homepage": "https://github.com/thatretrodev/thatretrodev-website-src#readme"
+	"homepage": "https://github.com/thatretrodev/thatretrodev-website-src#readme",
+	"dependencies": {
+		"typescript": "^4.2.4"
+	}
 }
