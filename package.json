@@ -1,0 +1,19 @@
+{
+  "name": "thatretrodev-website",
+  "version": "1.0.0",
+  "description": "thatretrodev's website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thatretrodev/thatretrodev-site-src.git"
+  },
+  "author": "thatretrodev",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/thatretrodev/thatretrodev-site-src/issues"
+  },
+  "homepage": "https://github.com/thatretrodev/thatretrodev-site-src#readme"
+}
