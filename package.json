@@ -20,5 +20,8 @@
 	"homepage": "https://github.com/thatretrodev/thatretrodev-website-src#readme",
 	"dependencies": {
 		"typescript": "^4.2.4"
+	},
+	"devDependencies": {
+		"@types/node": "^15.0.1"
 	}
 }
