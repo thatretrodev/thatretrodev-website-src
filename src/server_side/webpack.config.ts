@@ -1,5 +1,5 @@
 /*
-	Filename: start_web_server.ts
+	Filename: webpack.config.ts
 	This file is the configuration used for webpack.
 */
 
