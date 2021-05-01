@@ -1,21 +1,21 @@
 {
-  "name": "thatretrodev-website",
-  "version": "1.0.0",
-  "description": "thatretrodev's website",
-  "main": "index.js",
-  "scripts": {
-    "test": "node bin/server_side/start_web_server.js",
-    "build": "node bin/server_side/build.js",
-    "clean": "rm -r bin"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/thatretrodev/thatretrodev-website-src.git"
-  },
-  "author": "thatretrodev",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/thatretrodev/thatretrodev-website-src/issues"
-  },
-  "homepage": "https://github.com/thatretrodev/thatretrodev-website-src#readme"
+	"name": "thatretrodev-website",
+	"version": "1.0.0",
+	"description": "thatretrodev's website",
+	"main": "index.js",
+	"scripts": {
+		"test": "node bin/server_side/start_web_server.js",
+		"build": "node bin/server_side/build.js",
+		"clean": "rm -r bin"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/thatretrodev/thatretrodev-website-src.git"
+	},
+	"author": "thatretrodev",
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/thatretrodev/thatretrodev-website-src/issues"
+	},
+	"homepage": "https://github.com/thatretrodev/thatretrodev-website-src#readme"
 }
