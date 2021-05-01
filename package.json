@@ -4,7 +4,7 @@
   "description": "thatretrodev's website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node bin/server_side/start_web_server.js"
   },
   "repository": {
     "type": "git",
