@@ -4,7 +4,9 @@
   "description": "thatretrodev's website",
   "main": "index.js",
   "scripts": {
-    "test": "node bin/server_side/start_web_server.js"
+    "test": "node bin/server_side/start_web_server.js",
+    "build": "node bin/server_side/build.js",
+    "clean": "rm -r bin"
   },
   "repository": {
     "type": "git",
