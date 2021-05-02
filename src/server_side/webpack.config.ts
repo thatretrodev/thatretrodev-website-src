@@ -7,8 +7,5 @@ const path = require('path');
 
 module.exports = {
 	entry: './bin/client_side/main.js',
-	output: {
-		filename: 'main.js',
-		path: path.resolve(__dirname, 'bin/client_side/webpack')
-	}
+	mode: 'development'
 };

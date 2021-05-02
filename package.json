@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "node bin/server_side/start_web_server.js",
-		"build": "mkdir bin;npx tsc --outFile bin/server_side/build.js src/server_side/build.ts;node bin/server_side/build.js",
+		"build": "bash src/server_side/build.sh",
 		"clean": "rm -r bin;rm -r node_modules"
 	},
 	"repository": {
@@ -25,6 +25,7 @@
 	},
 	"devDependencies": {
 		"@types/express": "^4.17.11",
-		"@types/node": "^15.0.1"
+		"@types/node": "^15.0.1",
+		"webpack-cli": "^4.6.0"
 	}
 }
