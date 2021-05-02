@@ -10,6 +10,7 @@
 #
 
 mkdir -p bin/assets/js
+mkdir -p bin/assets/css
 mkdir -p bin/client_side/webpack
 
 #
@@ -28,7 +29,7 @@ npx tsc --outFile bin/server_side/webpack.config.js src/server_side/webpack.conf
 #
 
 echo "Compiling main.ts..."
-npx tsc --outFile bin/client_side/main.js src/client_side/main.ts
+npx tsc --outFile bin/client_side/main.js src/client_side/main.ts --module amd
 
 #
 #	Bundle the client-side code using webpack
@@ -38,4 +39,6 @@ echo "Bundling client-side code..."
 npx webpack --config bin/server_side/webpack.config.js -o bin/client_side/webpack > /dev/null
 
 echo "Creating asset data..."
+#cp node_modules/bootstrap/dist/css/bootstrap.min.css bin/assets/css/
+cp node_modules/bootswatch/dist/darkly/bootstrap.min.css bin/assets/css/
 cp bin/client_side/webpack/main.js bin/assets/js/

@@ -10,7 +10,7 @@ const port = 8080;
 app.use(express.static('bin/assets'));
 
 app.get('/', (req, res) => {
-	res.send('<head><script src="js/main.js"></script></head><body><title>Test!</title><h1>Test!</h1></body>');
+	res.send('<head><link rel="stylesheet" href="css/bootstrap.min.css"><script src="js/main.js"></script></head><body><title>Test!</title><h1>Test!</h1></body>');
 });
 
 app.listen(port, () => {
