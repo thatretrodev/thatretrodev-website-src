@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<title>Home - Thatretrodev's website</title>
+	<title>Blog - Thatretrodev's website</title>
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<script src="/js/main.js"></script>
 </head>
@@ -13,13 +13,13 @@
 	
 		<div class="collapse navbar-collapse " id="navbarColor02">
 			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="/">Home</a>
+				</li>
 				<li class="nav-item active">
-					<a class="nav-link" href="/">Home
+					<a class="nav-link" href="/blog">Blog
 						<span class="sr-only">(current)</span>
 					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/blog">Blog</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="/demos">Demos</a>
@@ -32,7 +32,8 @@
 	</nav>
 	<div class="w-50 mx-auto" id="page_content">
 		<br></br>
-		<h1>Test!</h1>
-		<p>This website took way too long to make.</p>
+		<div class="container" id="blog_post_viewer_div">
+			<%- include(blog_post_template_file, {}); %>
+		</div>
 	</div>
 </body>
