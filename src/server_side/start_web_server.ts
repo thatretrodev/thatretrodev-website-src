@@ -92,6 +92,10 @@ app.get('/blog', (req, res) => {
 	res.render('blog_index', {blog_posts: blog_posts});
 });
 
+app.get('/demos', (req, res) => {
+	res.render('demos_index');
+});
+
 app.listen(port, () => {
 	console.log(`Testing server listening at http://localhost:${port}`);
 });
