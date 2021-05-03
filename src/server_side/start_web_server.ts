@@ -30,7 +30,7 @@ function create_preview_from_blog_post(blog_post_path) {
 	const { window } = new jsdom.JSDOM(html_data);
 	var $ = require('jquery')(window);
 	post_text = $("#post_contents").text(); //window.document.getElementById("post_contents").innerText;
-	console.log("DEBUG STUFF: " + post_text);
+	//console.log("DEBUG STUFF: " + post_text);
 	if (new String(post_text).length > 64) {
 		post_text = post_text.substring(0, 100) + "...";
 	}
@@ -80,7 +80,7 @@ function create_blog_post_pages(expressapp) {
 }
 
 create_blog_post_pages(app);
-setTimeout(function() {console.log(blog_posts);}, 100);
+//setTimeout(function() {console.log(blog_posts);}, 100);
 
 app.get('/', (req, res) => {
 	res.render('index');
